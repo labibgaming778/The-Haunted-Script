@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>* STORY TITLE *</title>
+
+    <!-- GOOGLE FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="../css/stories.css">
+
+    <!-- EXTRA STORY CSS -->
+
+    <style>
+
+        /* =========================
+           STORY PAGE
+        ========================= */
+
+        .story-hero{
+
+            min-height:70vh;
+
+            display:grid;
+
+            place-items:center;
+
+            text-align:center;
+
+            padding:140px 20px 80px;
+
+            position:relative;
+        }
+
+        .story-hero::before{
+
+            content:"";
+
+            position:absolute;
+
+            inset:0;
+
+            background:
+            linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),
+            url('* STORY IMAGE URL *');
+
+            background-size:cover;
+
+            background-position:center;
+
+            z-index:-1;
+        }
+
+        .story-hero-content h1{
+
+            font-family:'Creepster',cursive;
+
+            font-size:5rem;
+
+            color:#ff0000;
+
+            text-shadow:
+            0 0 1px #ff0000,
+            0 0 2px #ff0000,
+            0 0 4px #ff0000;
+
+            margin-bottom:20px;
+        }
+
+        .story-hero-content p{
+
+            color:#ddd;
+
+            font-size:1.1rem;
+
+            max-width:700px;
+
+            margin:auto;
+
+            line-height:1.8;
+        }
+
+        /* =========================
+           STORY CONTENT
+        ========================= */
+
+        .story-content{
+
+            padding:100px 8%;
+        }
+
+        .story-box{
+
+            max-width:900px;
+
+            margin:auto;
+
+            background:rgba(15,15,15,0.92);
+
+            border:1px solid rgba(255,0,0,0.2);
+
+            border-radius:25px;
+
+            padding:50px;
+
+            backdrop-filter:blur(10px);
+
+            box-shadow:0 0 30px rgba(255,0,0,0.15);
+        }
+
+        .story-box h2{
+
+            font-size:2rem;
+
+            color:#ff4d4d;
+
+            margin-bottom:30px;
+        }
+
+        .story-box p{
+
+            color:#ccc;
+
+            line-height:2;
+
+            margin-bottom:25px;
+
+            font-size:1rem;
+        }
+
+        /* =========================
+           BACK BUTTON
+        ========================= */
+
+        .back-btn{
+
+            display:inline-block;
+
+            margin-top:30px;
+
+            padding:14px 35px;
+
+            background:#8b0000;
+
+            color:white;
+
+            text-decoration:none;
+
+            border-radius:35px;
+
+            transition:0.3s;
+
+            box-shadow:0 0 20px rgba(255,0,0,0.3);
+        }
+
+        .back-btn:hover{
+
+            background:#ff0000;
+
+            transform:scale(1.05);
+
+            box-shadow:0 0 35px rgba(255,0,0,0.7);
+        }
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media(max-width:768px){
+
+            .story-hero-content h1{
+                font-size:3.5rem;
+            }
+
+            .story-box{
+                padding:30px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+    <div class="logo">
+        The Haunted Script
+    </div>
+
+    <ul>
+
+        <li>
+            <a href="../index.html">Home</a>
+        </li>
+
+        <li>
+            <a href="../stories.html" class="active">Stories</a>
+        </li>
+
+        <li>
+            <a href="../videos.html">Videos</a>
+        </li>
+
+        <li>
+            <a href="../about.html">About</a>
+        </li>
+
+    </ul>
+
+</nav>
+
+<!-- STORY HERO -->
+
+<section class="story-hero">
+
+    <div class="story-hero-content">
+
+        <h1>
+            * STORY TITLE *
+        </h1>
+
+        <p>
+            * SMALL STORY DESCRIPTION / TAGLINE *
+        </p>
+
+    </div>
+
+</section>
+
+<!-- STORY CONTENT -->
+
+<section class="story-content">
+
+    <div class="story-box">
+
+        <h2>
+            * CHAPTER TITLE *
+        </h2>
+
+        <p>
+            * WRITE YOUR STORY PARAGRAPH HERE *
+        </p>
+
+        <p>
+            * WRITE NEXT PARAGRAPH HERE *
+        </p>
+
+        <p>
+            * CONTINUE YOUR STORY HERE *
+        </p>
+
+        <p>
+            * FINAL PART OF THE STORY *
+        </p>
+
+        <!-- BACK BUTTON -->
+
+        <a href="../stories.html" class="back-btn">
+            Back To Stories
+        </a>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+    © 2026 The Haunted Script | Shadows Never Sleep 👁️
+
+</footer>
+
+</body>
+</html>
